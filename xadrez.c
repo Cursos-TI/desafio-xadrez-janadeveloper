@@ -12,8 +12,8 @@ int main() {
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
     // Movimento do Bispo (5 casas na diagonal para cima e à direita)
     printf("Movimento do Bispo:\n");
-    int i = 0;
-    while (i < 5) {
+    int i = 1;
+    while (i <= 5) {
         printf("Cima Direita\n");
         i++;
     }
@@ -22,29 +22,42 @@ int main() {
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    // Movimento da Torre (5 casas para a direita)
+    // Movimento da Torre (5 casas para a direita usando um 'for')
     printf("Movimento da Torre:\n");
-    for (int i = 0; i < 5; i++) {
+    for (int i = 1; i <= 5; i++) {
         printf("Direita\n");
     }
-    printf("\n");
 
+    printf("\n");
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
       // Movimento da Rainha (8 casas para a esquerda)
       printf("Movimento da Rainha:\n");
-      int j = 0;
+      int j = 1;
       do {
           printf("Esquerda\n");
           j++;
-      } while (j < 8);
+      } while (j <= 8);
       printf("\n");
-  
-      return 0;
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+   
+    // Movimento do Cavalo (duas casas para baixo e uma para a esquerda usando loops aninhados)
+    printf("\nMovimento do Cavalo:\n");
+    
+    // O primeiro loop 'for' percorre o movimento para baixo duas casas
+    for (int k = 1; k <= 2; k++) {
+        printf("Baixo\n");
+        
+        // O segundo loop 'while' realiza o movimento para a esquerda uma casa
+        int l = 1;
+        while (l <= 1) {
+            printf("Esquerda\n");
+            l++;
+        }
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
